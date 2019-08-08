@@ -20,7 +20,7 @@ Compared to the first Neural Style Transfer ([Gatys, 2015](https://www.cv-founda
 
 ## Description
 ### Architecture
-<img src="img/architecture.png" width="80%">
+<img src="img/architecture.png" width="70%">
 <br>
 
 - **Input** <br>
@@ -59,13 +59,13 @@ Pre-trained weights are provied.  You can do **Incremental Learning**. Just load
 
 ## GUI
 `python gui.py` <br>
-<br>
+
 ### 1. Use whole style to do style transfer 
 **Step1. Select Content Image** <br>
 **Step2. Select Style Image** <br>
 **Step3. Click 'Stylize...' Button** <br>
 <text color='gray'>[ Result ]</text><br>
-<img src="img/gui_result_1.png" width="90%">
+<img src="img/gui_result_1.png" width="80%">
 
 ### 2. Choose some style elements to do style transfer 
 **Step1. Select Content Image** <br>
@@ -74,8 +74,8 @@ Pre-trained weights are provied.  You can do **Incremental Learning**. Just load
 Wait a monent, it will show 1~10 style elements.<br>Choose some style elements you like.<br>
 **Step4. Click 'Stylize...' Button** <br>
 <text color='gray'>[ Result ]</text><br>
-<img src="img/gui_result_2.png" width="90%">
-
+<img src="img/gui_result_2.png" width="80%">
+<br>
 
 ## Examples
 Style | Content | Stylized
