@@ -20,7 +20,7 @@ Compared to the first Neural Style Transfer ([Gatys, 2015](https://www.cv-founda
 
 ## Description
 ### Architecture
-![architecture](img/architecture.png)
+<img src="img/architecture.png" width="80%">
 <br>
 
 - **Input** <br>
@@ -29,11 +29,11 @@ using random 1000 pics from MS-COCO datasets as content image dataset, and 16 ki
 - **Network and Training** <br>
 having two part. Each part has each corresponding training branch. <br>
   1. Auto-encoder : encoder and decoder.<br>
-  ![autoencoder_train](img/autoencoder_train.png)
+  <img src="img/autoencoder_train.png" width="80%">
 
 
   2. StyleBank Layer: style filter.<br>
-  ![stylebanklayer_train](img/stylebanklayer_train.png)
+  <img src="img/stylebanklayer_train.png" width="80%">
 
 - **Training Strategy** <br>
 Employ a (T+1)-step alternative training strategy in order to balance the two branches (auto-encoder and stylizing). During training, for every T+1 iterations, we first train T iterations on the stylizing branch , then train one iteration for auto-encoder branch.
@@ -49,7 +49,7 @@ Iteration : 300,000
 
 
 ## Training
-Prepare the content image dataset (MS-COCO), and your style image dataset. <br>
+Prepare the content image dataset ([MS-COCO](http://cocodataset.org/#download)), and your style image dataset. <br>
 `python train.py` <br>
 It takes about 2 days to train on GeForce GTX 2080 Ti. <br>
 
@@ -65,7 +65,7 @@ Pre-trained weights are provied.  You can do **Incremental Learning**. Just load
 **Step2. Select Style Image** <br>
 **Step3. Click 'Stylize...' Button** <br>
 <text color='gray'>[ Result ]</text><br>
-<img src="img/gui_result_1.png" width="70%">
+<img src="img/gui_result_1.png" width="90%">
 
 ### 2. Choose some style elements to do style transfer 
 **Step1. Select Content Image** <br>
@@ -74,7 +74,7 @@ Pre-trained weights are provied.  You can do **Incremental Learning**. Just load
 Wait a monent, it will show 1~10 style elements.<br>Choose some style elements you like.<br>
 **Step4. Click 'Stylize...' Button** <br>
 <text color='gray'>[ Result ]</text><br>
-<img src="img/gui_result_2.png" width="70%">
+<img src="img/gui_result_2.png" width="90%">
 
 
 ## Examples
